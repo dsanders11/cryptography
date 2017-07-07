@@ -53,8 +53,8 @@ if platform.python_implementation() == "PyPy":
             "upgrade PyPy to use this library."
         )
 else:
-    requirements.append("cffi>=1.7")
-    setup_requirements.append("cffi>=1.7")
+    requirements.append("hg+https://dsanders11@bitbucket.org/dsanders11/cffi/")
+    setup_requirements.append("hg+https://dsanders11@bitbucket.org/dsanders11/cffi/")
 
 test_requirements = [
     "pytest>=2.9.0",
